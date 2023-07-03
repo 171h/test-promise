@@ -68,5 +68,8 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "dependencies": {
+    "then-fs": "^2.0.0"
   }
 }
