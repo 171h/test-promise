@@ -9,7 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.101",
     "@nuxt/devtools": "latest",
+    "@nuxthq/ui": "^2.7.0",
     "@types/node": "^18.17.0",
     "nuxt": "^3.6.5"
   },

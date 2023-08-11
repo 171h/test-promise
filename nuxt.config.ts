@@ -1,4 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  modules: [
+    '@nuxthq/ui',
+  ],
+  devtools: {
+    enabled: true,
+  },
+  ui: {
+    global: true,
+    icons: ['mdi', 'simple-icons']
+  },
 })
