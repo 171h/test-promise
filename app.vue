@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-10">
     <NuxtWelcome />
     <TestAccordion />
     <TestDefineShortcuts />
