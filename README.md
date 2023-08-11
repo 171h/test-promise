@@ -1,21 +1,63 @@
-# learn-promise
+# Nuxt 3 Minimal Starter
 
-## 回调地狱
-- 多层回调函数的相互嵌套，就形成了回调地狱。示例代码如下：
-- 回调地狱的缺点：
-  - 代码耦合性太强，牵一发而动全身，难以维护
-  - 大量冗余的代码相互嵌套，代码的可读性变差
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Promise
-- 为了解决回调地狱的问题，ES6（ECMAScript 2015 ）中新增了 Promise 的概念。
+## Setup
 
-### 基本概念
-- ① Promise 是一个构造函数
-  - 我们可以创建 Promise 的实例 `const p = new Promise()`
-  - new 出来的 Promise 实例对象， 代表一个异步操作
-- ② `Promise.prototype` 上包含一个 `.then()` 方法
-  - 每一次 new Promise() 构造函数得到的实例对象，都可以通过原型链的方式访问到 .then() 方法，例如 `p.then().then()`
-- ③ `.then()` 方法用来预先指定成功和失败的回调函数
-  - `p.then(成功的回调函数 ，失败的回调函数)`
-  - `p.then(result => { }, error => {})`
-  - 调用 `.then()` 方法时，成功的回调函数是必选的、失败的回调函数是可选的
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
