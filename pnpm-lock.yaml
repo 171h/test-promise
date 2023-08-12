@@ -17,6 +17,12 @@ devDependencies:
   '@types/node':
     specifier: ^18.17.0
     version: 18.17.0
+  '@vueuse/core':
+    specifier: ^10.3.0
+    version: 10.3.0(vue@3.3.4)
+  '@vueuse/nuxt':
+    specifier: ^10.3.0
+    version: 10.3.0(nuxt@3.6.5)(vue@3.3.4)
   nuxt:
     specifier: ^3.6.5
     version: 3.6.5(@types/node@18.17.0)
@@ -1967,6 +1973,24 @@ packages:
 
   /@vueuse/metadata@10.3.0:
     resolution: {integrity: sha512-Ema3YhNOa4swDsV0V7CEY5JXvK19JI/o1szFO1iWxdFg3vhdFtCtSTP26PCvbUpnUtNHBY2wx5y3WDXND5Pvnw==}
+    dev: true
+
+  /@vueuse/nuxt@10.3.0(nuxt@3.6.5)(vue@3.3.4):
+    resolution: {integrity: sha512-Dmkm9H5Ubq279+FHhlJtlFP99wKrn2apuo4hk/0GbEi/6+zif7MJRtAjDBBV4VjmY6XV3kO8dQR8940FStbxsA==}
+    peerDependencies:
+      nuxt: ^3.0.0
+    dependencies:
+      '@nuxt/kit': 3.6.5
+      '@vueuse/core': 10.3.0(vue@3.3.4)
+      '@vueuse/metadata': 10.3.0
+      local-pkg: 0.4.3
+      nuxt: 3.6.5(@types/node@18.17.0)
+      vue-demi: 0.14.5(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: true
 
   /@vueuse/shared@10.3.0(vue@3.3.4):

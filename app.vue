@@ -29,6 +29,20 @@
     <TestSlideover />
     <TestPopover />
     <TestTooltip />
+    <TestContextMenu />
+    <TestNotification />
+    <UNotifications color="gray">
+      <template #title="{ title }">
+        <span v-html="title" />
+      </template>
+
+      <template #description="{ description }">
+        <span v-html="description" />
+      </template>
+    </UNotifications>
+    <TestCard />
+    <TestContainer />
+    <TestSkeleton />
   </div>
 </template>
 
@@ -38,6 +52,7 @@ h1 {
   font-weight: bold;
   margin-top: 1rem;
 }
+
 h1::before {
   content: '🧪';
   margin-right: 0.5rem;
