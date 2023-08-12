@@ -3,7 +3,7 @@ const { count, inc, dec } = useCount()
 </script>
 
 <template>
-  <div inline-flex m="y-3">
+  <div class="my-3 inline-flex">
     <button rounded-full p-2 btn @click="dec()">
       <div i-carbon-subtract />
     </button>

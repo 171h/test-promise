@@ -1,61 +1,8 @@
 <template>
   <div class="mx-10 mb-96">
-    <NuxtWelcome />
-    <TestAccordion />
-    <TestDefineShortcuts />
-    <TestAlert />
-    <TestAvatar />
-    <TestBadge />
-    <TestButton />
-    <TestDropdown />
-    <TestIcon />
-    <TestKbd />
-    <TestLink />
-    <TestInput />
-    <TestTextarea />
-    <TestSelect />
-    <TestSelectMenu />
-    <TestCheckbox />
-    <TestRadio />
-    <TestToggle />
-    <TestRange />
-    <TestFormGroup />
-    <TestForm />
-    <TestTable />
-    <TestVNav />
-    <TestComPalette />
-    <TestTabs />
-    <TestModal />
-    <TestSlideover />
-    <TestPopover />
-    <TestTooltip />
-    <TestContextMenu />
-    <TestNotification />
-    <UNotifications color="gray">
-      <template #title="{ title }">
-        <span v-html="title" />
-      </template>
-
-      <template #description="{ description }">
-        <span v-html="description" />
-      </template>
-    </UNotifications>
-    <TestCard />
-    <TestContainer />
-    <TestSkeleton />
+    <TestSplitpanes />
+    <TailwindFlex />
+    <!-- <NuxtWelcome /> -->
+    <Ui />
   </div>
 </template>
-
-<style>
-h1 {
-  text-align: left;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-h1::before {
-  content: '🧪';
-  margin-right: 0.5rem;
-}
-</style>
-
