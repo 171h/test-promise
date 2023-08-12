@@ -16,6 +16,16 @@
     <TestSelect />
     <TestSelectMenu />
     <TestCheckbox />
+    <TestRadio />
+    <TestToggle />
+    <TestRange />
+    <TestFormGroup />
+    <TestForm />
+    <TestTable />
+    <TestVNav />
+    <TestComPalette />
+    <TestTabs />
+    <TestModal />
   </div>
 </template>
 
