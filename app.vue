@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-10">
+  <div class="mx-10 mb-96">
     <NuxtWelcome />
     <TestAccordion />
     <TestDefineShortcuts />
@@ -26,6 +26,9 @@
     <TestComPalette />
     <TestTabs />
     <TestModal />
+    <TestSlideover />
+    <TestPopover />
+    <TestTooltip />
   </div>
 </template>
 
