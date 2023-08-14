@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxthq/ui',
     '@vueuse/nuxt',
+    '@pinia/nuxt',
   ],
   devtools: {
     enabled: true,
