@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  modelValue?: boolean,
+  modelValue?: boolean
 }>()
 const toast = useToast()
 function notify1() {
@@ -16,9 +16,9 @@ function notify2() {
     timeout: 0,
     actions: [
       { label: 'Restart', click: () => { } },
-      { variant: 'outline', color: 'primary', label: 'Action 2' }
+      { variant: 'outline', color: 'primary', label: 'Action 2' },
     ],
-    color: 'red'
+    color: 'red',
   })
 }
 function notify3() {

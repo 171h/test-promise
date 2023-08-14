@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { Splitpanes, Pane } from 'splitpanes'
+import { Pane, Splitpanes } from 'splitpanes'
 import 'splitpanes/dist/splitpanes.css'
-
 </script>
 
 <template>
   <h1>Test Splitpanes</h1>
   <div class="h-48">
-    <splitpanes >
-      <pane v-for="i in 3" :key="i">
+    <Splitpanes>
+      <Pane v-for="i in 3" :key="i">
         <div>{{ i }}</div>
-      </pane>
-    </splitpanes>
+      </Pane>
+    </Splitpanes>
   </div>
 </template>
+
 <style>
 .splitpanes {
   background-color: transparent;
@@ -48,5 +48,4 @@ import 'splitpanes/dist/splitpanes.css'
   bottom: -5px;
   width: 100%;
 }
-
 </style>

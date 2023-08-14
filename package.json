@@ -6,12 +6,19 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "pnpm eslint .",
+    "lint:fix": "pnpm eslint . --fix"
+  },
+  "dependencies": {
+    "splitpanes": "^3.1.5"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
     "@iconify/json": "^2.2.101",
     "@nuxt/devtools": "latest",
     "@nuxthq/ui": "^2.7.0",
+    "@pinia/nuxt": "^0.4.11",
     "@types/node": "^18.17.0",
     "@types/splitpanes": "^2.2.1",
     "@vitest/ui": "^0.34.1",
@@ -20,8 +27,5 @@
     "nuxt": "^3.6.5",
     "vitest": "^0.34.1",
     "vue": "^3.3.4"
-  },
-  "dependencies": {
-    "splitpanes": "^3.1.5"
   }
 }

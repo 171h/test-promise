@@ -2,13 +2,13 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxthq/ui',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   devtools: {
     enabled: true,
   },
   ui: {
     global: true,
-    icons: 'all'
+    icons: 'all',
   },
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  modelValue?: boolean,
+  modelValue?: boolean
 }>()
 
 const isOpen = ref(false)
@@ -14,8 +14,8 @@ defineShortcuts({
   escape: {
     usingInput: true,
     whenever: [isOpen5],
-    handler: () => { isOpen5.value = false }
-  }
+    handler: () => { isOpen5.value = false },
+  },
 })
 </script>
 

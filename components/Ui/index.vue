@@ -58,4 +58,3 @@ h1::before {
   margin-right: 0.5rem;
 }
 </style>
-
