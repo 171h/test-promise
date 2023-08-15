@@ -11,6 +11,7 @@
     <!-- <TailwindFlex /> -->
     <!-- <NuxtWelcome /> -->
     <!-- <Ui /> -->
-    <TestEditor />
+    <!-- <TestEditor /> -->
+    <OpenFile />
   </div>
 </template>
