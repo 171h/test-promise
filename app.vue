@@ -12,6 +12,7 @@
     <!-- <NuxtWelcome /> -->
     <!-- <Ui /> -->
     <!-- <TestEditor /> -->
-    <OpenFile />
+    <TestFileDialog />
+    <TestFileSystemAccess />
   </div>
 </template>

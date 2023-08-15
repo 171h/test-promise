@@ -3,7 +3,7 @@ const props = defineProps<{
   modelValue?: boolean
 }>()
 
-const { files, onChange, open, reset } = useFileDialog({ accept: '.mddoc' })
+const { onChange, open, reset } = useFileDialog({ accept: '.mddoc' })
 onChange((files) => {
   // eslint-disable-next-line no-console
   console.log('files', files)
