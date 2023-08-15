@@ -28,6 +28,8 @@ const selected = computed({
   },
 })
 
+const selected2 = ref(0)
+
 function onChange(index: number) {
   const item = items[index]
 
@@ -125,4 +127,8 @@ function onSubmit(form: any) {
       </UCard>
     </template>
   </UTabs>
+  <hr>
+  <UButton label="Select second tab" @click="() => selected2 = 1" />
+  <UButton label="Select thrid tab" @click="() => selected2 = 2" />
+  <UTabs v-model="selected2" :items="items" />
 </template>
