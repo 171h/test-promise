@@ -12,7 +12,8 @@
     <!-- <NuxtWelcome /> -->
     <!-- <Ui /> -->
     <!-- <TestEditor /> -->
-    <TestFileDialog />
-    <TestFileSystemAccess />
+    <!-- <TestFileDialog /> -->
+    <!-- <TestFileSystemAccess /> -->
+    <EventDemo />
   </div>
 </template>
