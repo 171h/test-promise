@@ -3,6 +3,8 @@ const props = defineProps<{
   modelValue?: boolean
 }>()
 
+const test = useFileSystemAccess()
+
 const fsa = useFileSystemAccess({
   dataType: 'ArrayBuffer',
   types: [
