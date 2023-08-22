@@ -29,13 +29,18 @@ function test(...value: any) {
     <!-- <TestFileDialog /> -->
     <!-- <TestFileSystemAccess /> -->
     <!-- <EventDemo /> -->
-    <TestPickr
+    <!-- <TestPickr
       theme="nano"
       class="!w-24"
       @change="test"
       @save="test"
     >
       <UInput :ui="{ wrapper: 'test-wrapper', base: 'test-base !p-0' }" type="color" />
-    </TestPickr>
+    </TestPickr> -->
+    <div class="w-32">
+      <LinePicker
+        @change="test"
+      />
+    </div>
   </div>
 </template>
