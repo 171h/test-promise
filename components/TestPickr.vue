@@ -30,6 +30,10 @@ const emit = defineEmits<{
 const pickrRef = ref()
 const pickr = ref<Pickr>()
 
+function show() {
+  pickr.value?.show()
+}
+
 onNuxtReady(() => {
   if (!pickr.value) {
     pickr.value = Pickr.create({
@@ -72,11 +76,12 @@ onNuxtReady(() => {
       },
       position: 'bottom-middle',
       useAsButton: false,
-      inline: true,
+      inline: false,
       lockOpacity: true,
       i18n: {
         'btn:save': '确定',
-        'btn:clear': '取消',
+        'btn:clear': '清除',
+        'btn:cancel': '取消',
       },
     })
   }
@@ -104,7 +109,10 @@ onNuxtReady(() => {
 </script>
 
 <template>
-  <div ref="pickrRef" />
+  <div class="inline w-fit" @click.prevent="show">
+    <slot />
+    <div ref="pickrRef" />
+  </div>
 </template>
 
 <style>
@@ -115,6 +123,9 @@ onNuxtReady(() => {
   padding: 0 !important;
   width: 32px;
   height: 32px;
+  background-color: transparent;
+
+  display: none;
 }
 .pcr-app .pcr-interaction {
   justify-content: space-around;

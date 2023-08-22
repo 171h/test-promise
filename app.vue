@@ -31,9 +31,11 @@ function test(...value: any) {
     <!-- <EventDemo /> -->
     <TestPickr
       theme="nano"
-      class="w-32 h-32"
+      class="!w-24"
       @change="test"
       @save="test"
-    />
+    >
+      <UInput :ui="{ wrapper: 'test-wrapper', base: 'test-base !p-0' }" type="color" />
+    </TestPickr>
   </div>
 </template>
