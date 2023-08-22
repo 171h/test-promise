@@ -1,3 +1,17 @@
+<script setup lang="ts">
+import { Logger } from '@171h/log'
+
+const props = defineProps<{
+  modelValue?: boolean
+}>()
+
+const logger = new Logger('app.vue')
+
+function test(...value: any) {
+  logger.info('test:value', value)
+}
+</script>
+
 <template>
   <div class="mx-10 mb-96">
     <!-- <TestTabs /> -->
@@ -14,6 +28,12 @@
     <!-- <TestEditor /> -->
     <!-- <TestFileDialog /> -->
     <!-- <TestFileSystemAccess /> -->
-    <EventDemo />
+    <!-- <EventDemo /> -->
+    <TestPickr
+      theme="nano"
+      class="w-32 h-32"
+      @change="test"
+      @save="test"
+    />
   </div>
 </template>
