@@ -38,7 +38,12 @@ function test(...value: any) {
       <UInput :ui="{ wrapper: 'test-wrapper', base: 'test-base !p-0' }" type="color" />
     </TestPickr> -->
     <div class="w-32">
-      <LinePicker
+      <!-- <LinePicker
+        @change="test"
+      /> -->
+      <InputSelect
+        :options="[2, 1.5, 1, 0.9, 0.8, 0.66, 0.5, 0.33].map(item => ({ label: `${item * 100}%`, value: item }))"
+        :model-value="{ label: '66%', value: 0.66 }"
         @change="test"
       />
     </div>
