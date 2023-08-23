@@ -4,10 +4,18 @@ const props = defineProps<{
 }>()
 const value = ref('')
 const q = ref('')
+
+const value2 = ref(123)
+function update2() {
+  value2.value = Math.random()
+}
 </script>
 
 <template>
   <h1>Test Input</h1>
+  <UInput :value="value2" />
+  <UButton label="Update" @click="update2" />
+
   <UInput v-model="value" />
   <UInput v-model="value" disabled />
   <UInput v-model="value" color="primary" variant="outline" />
