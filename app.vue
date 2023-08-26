@@ -44,6 +44,7 @@ function test(...value: any) {
       <InputSelect
         :options="[2, 1.5, 1, 0.9, 0.8, 0.66, 0.5, 0.33].map(item => ({ label: `${item * 100}%`, value: item }))"
         :model-value="{ label: '66%', value: 0.66 }"
+        value-attribute="value"
         @change="test"
       />
     </div>

@@ -2,32 +2,29 @@
 const props = defineProps<{
   modelValue?: string | { [key: string]: any }
   options?: string[] | { [key: string]: any }[]
+  valueAttribute?: string
 }>()
 const emit = defineEmits<{
   (e: 'change', value: string): void
 }>()
 
-const value = computed(() => {
-  if (typeof props.modelValue === 'string')
-    return props.modelValue
-
-  if (typeof props.modelValue === 'object')
-    return props.modelValue.label
-
-  return ''
-})
+const selected = ref(typeof props.modelValue === 'object' ? props.modelValue.value : props.modelValue)
 </script>
 
 <template>
   <USelectMenu
+    v-model="selected"
     :options="options"
-    value-attribute="value"
-    @update:model-value="emit('change', $event)"
+    :value-attribute="valueAttribute"
+    @update:model-value="emit('change', selected)"
   >
-    <UInput
-      :value="value"
-      type="text"
-      @blur="emit('change', $event.target.value)"
-    />
+    <template #label>
+      <UInput
+        v-model="selected"
+        size="2xs"
+        variant="none"
+        @blur="emit('change', selected)"
+      />
+    </template>
   </USelectMenu>
 </template>
