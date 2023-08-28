@@ -87,4 +87,40 @@ function switchTo() {
       </div>
     </template>
   </UTabs>
+
+  <hr>
+
+  <UTabs
+    v-model="selected"
+    orientation="vertical"
+    :ui="{
+      wrapper: 'test-wrapper flex',
+      container: 'test-container !m-0 bg-red-400',
+      base: 'test-base',
+      list: {
+        base: 'test-list-base !inline-flex flex-col !w-fit rounded-none gap-x-0.5 !p-0',
+        marker: {
+          wrapper: 'test-list-marker-wrapper',
+          base: 'test-list-marker-base absolute w-0.5 z-50 rounded-none bg-primary',
+        },
+        tab: {
+          base: 'test-list-tab-base justify-start !max-w-3xs w-full bg-gray-200 rounded-none',
+          padding: 'pl-2 pr-1',
+          active: 'bg-red-400',
+        },
+      },
+    }"
+    :items="items"
+    class="w-full"
+  >
+    <template #default="{ item, index, selected }">
+      <div class="flex items-center gap-2 relative truncate">
+        <UIcon :name="item.icon" class="w-4 h-4 flex-shrink-0" />
+
+        <span class="truncate">{{ index + 1 }}. {{ item.label }}</span>
+
+        <span v-if="selected" class="absolute -right-4 w-2 h-2 rounded-full bg-primary-500 dark:bg-primary-400" />
+      </div>
+    </template>
+  </UTabs>
 </template>
