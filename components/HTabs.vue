@@ -52,23 +52,6 @@ function switchTo() {
   />
   <UTabs
     v-model="selected"
-    :ui="{
-      wrapper: 'test-wrapper',
-      container: 'test-container !m-0 bg-red-400',
-      base: 'test-base',
-      list: {
-        base: 'test-list-base !inline-flex rounded-none gap-x-0.5 !p-0 overflow-x-auto overflow-y-hidden',
-        marker: {
-          wrapper: 'test-list-marker-wrapper',
-          base: 'test-list-marker-base absolute h-0.5 z-50 rounded-none bg-primary',
-        },
-        tab: {
-          base: 'test-list-tab-base !max-w-3xs w-fit h-full bg-gray-200 rounded-none',
-          padding: 'pl-2 pr-1',
-          active: 'bg-red-400',
-        },
-      },
-    }"
     :items="items"
     class="w-full"
   >
@@ -94,19 +77,14 @@ function switchTo() {
     v-model="selected"
     orientation="vertical"
     :ui="{
-      wrapper: 'test-wrapper flex',
-      container: 'test-container !m-0 bg-red-400',
-      base: 'test-base',
+      wrapper: 'flex',
       list: {
-        base: 'test-list-base !inline-flex flex-col !w-fit rounded-none gap-x-0.5 !p-0',
+        base: 'h-full !w-fit flex-col overflow-hidden',
         marker: {
-          wrapper: 'test-list-marker-wrapper',
-          base: 'test-list-marker-base absolute w-0.5 z-50 rounded-none bg-primary',
+          base: 'h-full w-0.5 z-50',
         },
         tab: {
-          base: 'test-list-tab-base justify-start !max-w-3xs w-full bg-gray-200 rounded-none',
-          padding: 'pl-2 pr-1',
-          active: 'bg-red-400',
+          base: 'py-1 w-full',
         },
       },
     }"
