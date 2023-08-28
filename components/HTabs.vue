@@ -59,8 +59,8 @@ function switchTo() {
       list: {
         base: 'test-list-base !inline-flex rounded-none gap-x-0.5 !p-0 overflow-x-auto overflow-y-hidden',
         marker: {
-          wrapper: 'test-list-marker-wrapper hidden',
-          base: 'test-list-marker-base',
+          wrapper: 'test-list-marker-wrapper',
+          base: 'test-list-marker-base absolute h-0.5 z-50 rounded-none bg-primary',
         },
         tab: {
           base: 'test-list-tab-base !max-w-3xs h-full bg-gray-200 rounded-none',
