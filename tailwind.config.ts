@@ -13,6 +13,12 @@ export default <Partial<Config>> {
         '5xs': '4rem',
         '6xs': '3rem',
       },
+      screens: {
+        '4xs': '160px',
+        '3xs': '240px',
+        '2xs': '320px',
+        'xs': '480px',
+      },
     },
   },
 }
