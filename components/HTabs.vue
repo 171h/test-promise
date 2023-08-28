@@ -63,7 +63,7 @@ function switchTo() {
           base: 'test-list-marker-base absolute h-0.5 z-50 rounded-none bg-primary',
         },
         tab: {
-          base: 'test-list-tab-base !max-w-3xs h-full bg-gray-200 rounded-none',
+          base: 'test-list-tab-base !max-w-3xs w-fit h-full bg-gray-200 rounded-none',
           padding: 'pl-2 pr-1',
           active: 'bg-red-400',
         },
